@@ -20,17 +20,12 @@ const Header = styled.section`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    p{
-      font-size: 3.8vh;
-      font-weight: 600;
-      color: white;
-      font-family: 'Source Sans Pro', sans-serif;
-    }
   }
 `
 
 const LogoImg = styled.img`
   width: 150px;
+  cursor: pointer;
 `
 const Input = styled.input`
   padding-left: 70px;
@@ -53,6 +48,22 @@ const Input = styled.input`
       font-weight: 500;
    }
 `
+const List = styled.ul`
+  display: flex;
+  list-style: none;
+`
+const Item = styled.li`
+  margin-left: 30px;
+  text-transform: uppercase;
+  font-size: 3vh;
+  font-weight: 600;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  &:hover{
+    cursor: pointer;
+    text-decoration: underline 3px;
+  }
+`
 
 export default class HeaderComponent extends React.Component{
 
@@ -62,7 +73,10 @@ export default class HeaderComponent extends React.Component{
         <Header>
           <div>
             <LogoImg src={Logo} alt="Logo do site"/>
-            <p>Notícias</p>
+            <List>
+              <Item>Notícia</Item>
+              <Item>Paisagens</Item>
+            </List>
           </div>
           <Input type="text" placeholder="Pesquisar no site"/>
         </Header>

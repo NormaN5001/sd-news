@@ -2,6 +2,8 @@ import React from 'react'
 import { createGlobalStyle } from "styled-components"
 import Header from './components/Header'
 import Main from './components/Main'
+import Footer from './components/Footer'
+
 
 const GlobalStyle = createGlobalStyle`
    *{
@@ -10,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing:border-box;
   }
   body{
-    background-color: lightgrey;
+    background-color: whitesmoke;
   }
 `
 
@@ -22,6 +24,7 @@ export default class SdNews extends React.Component{
       <GlobalStyle/>
       <Header/>
       <Main/>
+      <Footer/>
       </>
       )
   }
