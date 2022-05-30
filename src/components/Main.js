@@ -3,18 +3,24 @@ import styled from 'styled-components'
 
 const Main = styled.section`
   margin: 70px 15vw 0 15vw;
-  height: 130vh;
+  height: 1300px;
 
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  @media(max-width: 768px){
+    margin: 100px 10vw 0 10vw;
+    height: 200vh;
+  }
+  @media(max-width: 425px){
+    margin: 100px 10px 0 10px;
+  }
 `
 const Topic = styled.div`
   background-color: white;
   width: 100%;
   height: 220px;
   border-radius: 5px;
-
   p{
     margin: 20px;
     color: #717171;
@@ -24,6 +30,9 @@ const Topic = styled.div`
     margin: 20px;
     color: #1A202C;
     font-size: 2.5vh;
+  }
+  @media(max-width: 768px){
+    height: 40vh;
   }
 `
 

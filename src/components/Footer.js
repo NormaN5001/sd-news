@@ -13,6 +13,9 @@ const Footer = styled.section`
     font-weight: bold;
     color: white;
   }
+  @media(max-width: 768px){
+    margin-top: 100px;
+  }
 `
 
 export default class FooterComponent extends React.Component{
@@ -20,7 +23,7 @@ export default class FooterComponent extends React.Component{
   render(){
     return(
       <Footer>
-        <p>Desenvolvido por: a</p>
+        <p>Desenvolvido por: 3° ano</p>
       </Footer>
       )
   }
