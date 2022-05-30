@@ -83,10 +83,10 @@ const Item = styled.li`
     height: 35px;
     width: 160px;
     border-radius: 50px;
-  }
-  &:hover{
+    &:hover{
     color: #181818;
     text-decoration: none;
+  }
   }
   @media(max-width: 425px){
     margin-left: 10px;
